@@ -41,7 +41,7 @@ header{
 
 header ul{
 	display: block;
-	width: 40%;
+	width: 50%;
 	height: inherit;
 	margin: 0px auto;
 	margin-top: -4px;
@@ -150,4 +150,84 @@ footer{
 	text-align: justify;
 }
 
+/* seccion con formulario */
 
+.container{
+	padding: 50px;
+	padding-top: 20px;
+}
+
+.container h2{
+	display: block;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+form{
+	width: 80%;
+}
+
+form label{
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+form input[type="text"],
+input[type="number"],
+input[type="email"],
+form textarea{
+	width: 40%;
+	padding: 5px;
+}
+
+form input[type="submit"],
+form button{
+	display: block;
+	font-size: 17px;
+	padding: 10px;
+	margin-top: 15px;
+	color: white;
+	background: rgb(53, 103, 164);
+	border: 1px solid rgb(13, 67, 133);
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form button:hover{
+	background: rgba(53, 103, 164, 0.8);
+}
+
+form input[disabled]{
+	opacity: .5;
+	cursor: not-allowed;
+}
+
+.form_error{
+	padding: 3px;
+	font-size: 13px;
+	background: red;
+	color: white;
+	margin-left: 5px;
+}
+
+.message{
+	width: 50%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	color: white !important;
+}
+
+.message a{
+	color: white;
+}
+
+.success{
+	background: green;
+}
+
+.failed{
+	background: red;
+}
