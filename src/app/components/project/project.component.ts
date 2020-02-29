@@ -11,10 +11,12 @@ import { Global } from "../../service/global";
 })
 export class ProjectComponent implements OnInit {
   public projects : Project[];
+  public url: string;
 
   constructor(
     private _projectService : ProjectService
   ){
+    this.url = Global.url;
   }
 
   ngOnInit(): void{
@@ -22,7 +24,7 @@ export class ProjectComponent implements OnInit {
   }
 
   getProject(){
-    this._projectService.getProject().subscribe(
+    this._projectService.getProjects().subscribe(
       response =>{
         if(response.projects){
           this.projects = response.projects;
