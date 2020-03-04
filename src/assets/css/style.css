@@ -306,3 +306,9 @@ form input[disabled]{
 	color: red;
 	margin-top: 20px;
 }
+
+#eliminar{
+	width: 29px;
+	margin-left: 19px;
+	margin-bottom: 17px;
+}

@@ -51,6 +51,7 @@
             <label for="image">Imagen del proyecto: </label>
             <span class="image" *ngIf='project.image' style="float: none;">
                 <img src="{{url+ 'get-image/' + project.image}}" *ngIf = 'project.image'style="width: 100px;"> 
+                <a href="sobre-mi"><img id="eliminar" src="../../../assets/img/eliminar.png" ></a>
             </span> <br>
             <input type="file" name="image" placeholder="subir image" (change)= 'fileChangeEvent($event)'>
         </p>
